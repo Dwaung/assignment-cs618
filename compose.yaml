@@ -17,6 +17,9 @@ services:
     build:
       context: .
       args:
-        VITE_BACKEND_URL: https://opulent-sniffle-v6q6r5pr5vpqcpxrr-3001.app.github.dev//api/v1
+        VITE_BACKEND_URL: https://opulent-sniffle-v6q6r5pr5vpqcpxrr-3001.app.github.dev
     ports:
       - '3000:3000'
+    depends_on:
+      - blog-backend
+      
